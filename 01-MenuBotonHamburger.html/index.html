@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
+  <link rel="stylesheet" href="./css/uno.css">
+  <title>Menu de Navegacón</title>
+</head>
+<body data-dark>
+
+  <header class="header">
+    <h1>Ejecicios del DOM</h1>
+  </header>
+
+  <button class="panel-btn hamburger hamburger--collapse" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+
+
+  <aside class="panel">
+    <nav class="menu">
+      <a href="#seccion1" data-scroll-spy>Reloj Digital y Alarma Sonora</a>
+      <a href="#seccion2" data-scroll-spy>Eventos del Teclado</a>
+      <a href="#seccion3" data-scroll-spy>Cuenta Regresiva</a>
+      <a href="#seccion4" data-scroll-spy>Responsible Resposive Design con JavaScript</a>
+      <a href="#seccion5" data-scroll-spy>Responsive Tester</a>
+      <a href="#seccion6" data-scroll-spy>Detección de Dispositivos</a>
+      <a href="#seccion7" data-scroll-spy>Deteccion de conexión</a>
+      <a href="#seccion8" data-scroll-spy>Detección de Cámara web y micrófono</a>
+      <a href="#seccion9" data-scroll-spy>Geolocalización</a>
+      <a href="#seccion10" data-scroll-spy>Filtros de Búsquedas</a>
+      <a href="#seccion11" data-scroll-spy>Sorteo Digital</a>
+      <a href="#seccion12" data-scroll-spy>Responsive Slider</a>
+      <a href="#seccion13" data-scroll-spy>Video Inteligente</a>
+      <a href="#seccion14" data-scroll-spy>nuevo</a>
+      <a href="#seccion15" data-scroll-spy>nuevo</a>
+    </nav>
+  </aside>
+  <main>
+
+    <section class="section" data-scroll-spy id="seccion1">
+        <h2>Reloj Digital y Alarma Sonora</h2>
+        <div id="reloj"></div>
+        <div>
+          <button id="activar-reloj">Iniciar Reloj</button>
+          <button id="desactivar-reloj">Detener Reloj</button>
+          <button id="activar-alarma">Iniciar Alarma</button>
+          <button id="desactivar-alarma">Detener Alarma</button>
+        </div>
+    <!-- <audio src="./assets/alarma.mp3" controls></audio> -->
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion2">
+        <br>
+        <h2>Eventos del Teclado</h2>
+        <h3>ShortCuts</h3>
+        <p>Para probar los short cuts primero hay que seleccionar el DOM "Alt + a, Alt + c, Alt + p"</p>
+        <article class="stage">
+          <div class="ball"></div>
+        </article>
+        <p>Selleccioná la pelota</p>
+        <p>y probá con las teclas ariba, abajo, derecha e izquierda</p>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion3">
+        <br>
+        <h2>Cuenta Regresiva</h2>
+        <div id="countDown"></div>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion4">
+        <h2>Responsible Responsive Design con JavaScript </h2>
+        <div id="youtube"></div>
+        <div id="googlemaps"></div>
+        <p>Probar con diferentes tamaño de pantallas</p>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion5">
+      <br>
+        <h2>Responsive Tester</h2>
+        <form id="responsive-tester">
+          <br><br><br>
+          <input name="direccion" type="url" placeholder="URL" required>
+          <br>
+          <input name="ancho" type="text" placeholder="Ancho" required>
+          <br>
+          <input name="alto" type="text" placeholder="Alto" required>
+          <br><br>
+          <input name="probar" type="submit" value="Probar">
+          <input name="cerrar" type="button" value="Cerrar">
+          <br>
+          <p>El tester abre una nueva ventana de la URL con las medidas que especificadas</p>
+        </form>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion6">
+        <br>
+        <h2>Detección de Dispositivos <br>(User Agent)</br></h2>
+          <div id="user-device"></div>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion7">
+        <br>
+        <h2>Deteccion de conexión</h2>
+        <br>
+        <p>Probar conectando y desconectando el servicio de internet</p>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal"  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="titulo-modal">Conexión Perdida</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion8">
+        <br>
+        <h2>Detección de Cámara web y micrófono</h2>
+        <br>
+         <video id="webcam"></video> <!--Opciones, controls, autoplay="true" -->
+         <br>
+         <button id="start">Start</button>
+         <button id="pause">Pause</button>
+         <br>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion9">
+        <br>
+        <h2>Geolocalización</h2>
+        <div id="geolocation"></div>
+        <p>Tiene que dar permiso de geolocalización</p>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion10">
+        <h2>Filtros de Búsquedas</h2>
+
+        <input type="search" placeholder="Buscar..." class="card-filter">
+        <br>
+        <article class="cards">
+
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/nature" alt="Naturaleza">
+            <figcaption>Naturaleza</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/any" alt="Cualquier imagen">
+            <figcaption>Any</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/tech" alt="Tecnología">
+            <figcaption>Tecnología</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/animals" alt="Animales">
+            <figcaption>Animales</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/people" alt="Gente">
+            <figcaption>Gente</figcaption>
+          </figure>
+
+          <figure class="card">
+            <img src="https://placeimg.com/200/200/arch" alt="Arquitectura">
+            <figcaption>Arquitectura</figcaption>
+          </figure>
+
+        </article>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion11">
+        <br>
+        <h2>Sorteo Digital</h2>
+        <ul class="players">
+          <li class="player">JavaScript</li>
+          <li class="player">PHP</li>
+          <li class="player">Java</li>
+          <li class="player">C</li>
+          <li class="player">Python</li>
+          <li class="player">Ruby</li>
+          <li class="player">Go</li>
+          <li class="player">Visual Basic</li>
+          <li class="player">Rust</li>
+          <li class="player">Perl</li>
+        </ul>
+        <button id="winner-btn">Obtener Ganador</button>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion12">
+        <br>
+        <h2>Responsive Slider</h2>
+        <div class="slider">
+          <div class="slider-slides">
+            <div class="slider-slide active">
+            <img src="https://placeimg.com/400/400/animals" alt="Animales">
+            </div>
+            <div class="slider-slide">
+            <h4>Diapositiva 2</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Qui dignissimos quasi nesciunt facere officiis tenetur
+              at harum laudantium! Iure maxime veniam provident.
+            </p>
+            </div>
+            <div class="slider-slide">
+              <img src="https://placeimg.com/400/400/nature" alt="Naturaleza">
+            </div>
+            <div class="slider-slide">
+              <h4>Diapositiva 4</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Qui dignissimos quasi nesciunt facere officiis tenetur
+                at harum laudantium! Cuatro Iure maxime veniam provident.
+              </p>
+            </div>
+            <div class="slider-slide">
+              <img src="https://placeimg.com/400/400/people" alt="Gente">
+            </div>
+          </div>
+          <div class="slider-btns">
+            <a class="prev" href="#">&laquo;</a>
+            <a class="next" href="#">&raquo;</a>
+          </div>
+            <!-- <a class="continuo" href="#">Continuo</a> -->
+          </div>
+          <button id="continuo">Continuo</button>
+          <button id="continuo-parar">Parar</button>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion13">
+        <br>
+        <h2>Video Inteligente</h2>
+        <video src="./assets/Escribiendo en una computadora portátil negra.mp4" muted controls loop data-smart-video>
+        </video>
+        <P>Cuando la imágen se ve en menos de un 50% ó cambio de ventana el video para</P>
+        <p>Al regresar a la ventana ó mostrar mas de un 50% continúa</p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <video src="./assets/Escribiendo en el teclado.mp4" muted controls loop data-smart-video></video>
+        <!-- data atrivute "data-smart-video" -->
+        <!-- Los videos deven estar muteados -->
+        <!-- Podes usar el atributo "autoplay" en PC no en moviles -->
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion14">
+        <br>
+        <h2>Responsive</h2>
+    </section>
+
+    <section class="section" data-scroll-spy id="seccion15">
+        <br>
+        <h2>Responsive</h2>
+    </section>
+
+
+
+  </main>
+  <button class="scroll-top-btn hidden">&#11205;</button>
+  <button class="dark-theme-btn">🌙</button>
+
+<script src="./js/uno.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
