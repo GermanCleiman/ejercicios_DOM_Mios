@@ -462,7 +462,7 @@ display: inline-block;
   font-size: 80%;
   background-color: var(--form-error-color);
   color: #fff;
-  transition: all800ms ease;
+  transition: all 800ms ease;
 }
 
 .contact-form-error .is-active{
@@ -472,7 +472,7 @@ display: inline-block;
   efecto ease-out y both hace que los estilos de la animacion se conserben despues de terminar */
 }
 
-none{
+.none{
   display: none;
 }
 
