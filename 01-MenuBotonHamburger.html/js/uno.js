@@ -15,6 +15,7 @@ import darkTheme from "./tema_oscuro.js";
 import slider from "./carrusel.js";
 import scrollSpy from "./scroll_espia.js";
 import smartVideo from "./video_inteligente.js";
+import contactFormValidations from "./validaciones_formulario.js";
 
 
 const d = document;
@@ -54,6 +55,7 @@ d.addEventListener("DOMContentLoaded", (e)=>{
   slider();
   scrollSpy();
   smartVideo();
+  contactFormValidations();
 });
 
 //Lee cuando hay una tecla apretada, mantenida ó suelta "keydown", "keypress", "keyup"
