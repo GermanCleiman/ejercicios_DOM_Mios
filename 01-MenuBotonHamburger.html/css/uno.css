@@ -53,6 +53,7 @@ video {
 
 .header h1 {
   margin: 0 auto;
+  margin-top: -0.8rem;
   text-align: center;
 }
 
@@ -258,7 +259,7 @@ display: inline-block;
   background-color: var(--second-color);
   color: var(--main-color);
   transition: all 0.3s ease-out;
-  margin: 2rem;
+  margin: 1rem;
 }
 .card img{
   width: 100%;
@@ -319,7 +320,7 @@ display: inline-block;
 .slider-btns{
   position: absolute;
   width: 100%;
-  top: 40%;
+  top: calc(50% - 2rem);
   /* a la mitad del contenedor */
   display: flex;
   /* uno al lado del otro */
@@ -375,6 +376,7 @@ display: inline-block;
     transform: translate(0,0);/*arranca desde*/
     opacity: 1;/*modifico los valores para esta medda de viewport*/
     visibility: visible;/*modifico los valores para esta medda de viewport*/
+    overflow-y: auto;
   }
 
   .panel-btn{
@@ -383,6 +385,8 @@ display: inline-block;
 
   .menu{
     justify-content: start;
+    text-align: right;
+    margin: auto;
   }
 
   .menu a{
@@ -431,6 +435,11 @@ display: inline-block;
   text-align: center;
 }
 
+.contact-form legend{
+  margin-top: -1rem;
+}
+
+
 .contact-form input,
 .contact-form textarea{
   font-size: 1rem;
@@ -458,14 +467,14 @@ display: inline-block;
 }
 
 .contact-form-error{
-  margin-top: 1rem;
+  margin-top: -1rem;
   font-size: 80%;
   background-color: var(--form-error-color);
   color: #fff;
   transition: all 800ms ease;
 }
 
-.contact-form-error .is-active{
+.contact-form-error.is-active{
   display: block;
   animation: show-message 1s 1 normal 0s ease-out both;
   /* esta animacion va a durar 1 seg, se ejecuta solo 1 vez de forma normal 0 retardo

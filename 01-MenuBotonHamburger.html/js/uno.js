@@ -16,6 +16,7 @@ import slider from "./carrusel.js";
 import scrollSpy from "./scroll_espia.js";
 import smartVideo from "./video_inteligente.js";
 import contactFormValidations from "./validaciones_formulario.js";
+import speechReader from "./narrador.js";
 
 
 const d = document;
@@ -68,3 +69,4 @@ d.addEventListener("keydown", (e)=>{//le asigno la funcion a document, tambien l
 darkTheme(".dark-theme-btn", "darkMode");//El data atribut no lleva  . inicial
 ///fuera del D.. porque no lo necesita
 networkStatus();
+speechReader();
